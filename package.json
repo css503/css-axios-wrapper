@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/axios-wrapper.git"
+    "url": "git+https://github.com/css503/css-axios-wrapper.git"
   },
   "keywords": [
     "axios",
@@ -26,8 +26,8 @@
   "devDependencies": {
     "typescript": "^4.0.0"
   },
-  "homepage": "https://github.com/yourusername/axios-wrapper#readme",
+  "homepage": "https://github.com/css503/css-axios-wrapper#readme",
   "bugs": {
-    "url": "https://github.com/yourusername/axios-wrapper/issues"
+    "url": "https://github.com/css503/css-axios-wrapper/issues"
   }
 }

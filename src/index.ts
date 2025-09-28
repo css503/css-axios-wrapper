@@ -1,5 +1,4 @@
 import axios, { AxiosRequestConfig, Canceler } from 'axios';
-
 export interface AxiosWrapperOptions {
     getHeaders?: () => Record<string, any>; // 获取动态 headers 的方法
     requestInterceptor?: (config: AxiosRequestConfig) => AxiosRequestConfig;
