@@ -1,0 +1,33 @@
+{
+  "name": "css-axios-wrapper",
+  "version": "1.0.2",
+  "description": "A simple wrapper around axios for making HTTP requests.",
+  "main": "src/index.ts",
+  "types": "src/types/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/axios-wrapper.git"
+  },
+  "keywords": [
+    "axios",
+    "http",
+    "api",
+    "wrapper"
+  ],
+  "author": "css",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.4"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0"
+  },
+  "homepage": "https://github.com/yourusername/axios-wrapper#readme",
+  "bugs": {
+    "url": "https://github.com/yourusername/axios-wrapper/issues"
+  }
+}
