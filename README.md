@@ -26,10 +26,10 @@ const axiosWrapper = new AxiosWrapper({
     };
   },
   // 可选：自定义拦截器和错误处理
-  requestInterceptor: (config) => config,
-  responseInterceptor: (response) => response,
-  errorHandler: (error) => Promise.reject(error),
-  onCancelToken: (cancel) => { /* 取消函数收集 */ },
+  requestInterceptor: (config) => config,//请求拦截器
+  responseInterceptor: (response) => response,//响应拦截器，例如处理登录过期逻辑
+  errorHandler: (error) => Promise.reject(error),//错误处理器-处理网络错误
+  onCancelToken: (cancel) => { /* 取消函数收集 */ },//取消令牌回调
   axiosConfig: {
     timeout: 60000,
     withCredentials: true,

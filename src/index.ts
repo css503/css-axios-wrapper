@@ -63,6 +63,17 @@ export class AxiosWrapper {
             console.log(error);
         });
     }
+    // 下载文件
+    $export(url: string, params?: object, header: object | null = null) {
+        return this.axiosInstance.post(url, {
+            headers: {
+                'Content-Type': 'multipart/form-data',
+                ...header,
+            },
+            params,
+            responseType: 'blob',
+        }).then(res => res.data);
+    }
 }
 
 export default AxiosWrapper;
