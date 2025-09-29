@@ -58,7 +58,7 @@ export const login = (params: object | undefined) => $post('/adminUser/login', p
 ### 3. 页面中调用
 
 ```typescript
-import { login } from 'css-axios-wrapper/dist/api';
+import { login } from '../api';
 
 login({ username: 'xxx', password: 'xxx' }).then(res => {
   // 处理结果
@@ -69,7 +69,7 @@ login({ username: 'xxx', password: 'xxx' }).then(res => {
 
 - `$get(url: string, params?: object, header?: object | null): Promise<any>`
 - `$post(url: string, params?: object, header?: object | null): Promise<any>`
-
+- `$export(url:string, params?: object, header?: object | null)`
 ## 推荐结构
 
 - `src/index.ts`：axios 封装与实例化
